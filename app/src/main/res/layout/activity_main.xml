@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_triangle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="直角三角形"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="#c1c1c1"/>
+
+    <TextView
+        android:id="@+id/tv_triangle_both"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="等腰直角三角形"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="#c1c1c1"
+        android:layout_marginTop="1dp"/>
+
+</LinearLayout>
