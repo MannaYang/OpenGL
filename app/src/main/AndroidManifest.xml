@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".render.triangle.TriangleActivity" />
+        <activity android:name=".render.triangle.TriangleBothActivity" />
     </application>
 
 </manifest>

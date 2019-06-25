@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.manna.opengl.render.triangle.TriangleActivity;
+import com.manna.opengl.render.triangle.TriangleBothActivity;
 
 /**
  * OpenGL ES主页面
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         //等腰三角形
         tvTriangleBoth.setOnClickListener(v->{
-
+            startActivity(new Intent(this, TriangleBothActivity.class));
         });
     }
 }
