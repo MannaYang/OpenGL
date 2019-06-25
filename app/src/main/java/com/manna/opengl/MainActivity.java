@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.manna.opengl.render.square.SquareActivity;
 import com.manna.opengl.render.triangle.TriangleActivity;
 import com.manna.opengl.render.triangle.TriangleBothActivity;
 
@@ -13,7 +14,7 @@ import com.manna.opengl.render.triangle.TriangleBothActivity;
  */
 public class MainActivity extends AppCompatActivity {
 
-    private TextView tvTriangle,tvTriangleBoth;
+    private TextView tvTriangle, tvTriangleBoth, tvSquare;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private void init(){
         tvTriangle=findViewById(R.id.tv_triangle);
         tvTriangleBoth=findViewById(R.id.tv_triangle_both);
+        tvSquare = findViewById(R.id.tv_square);
     }
 
     private void initOnClick(){
@@ -38,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
         //等腰三角形
         tvTriangleBoth.setOnClickListener(v->{
             startActivity(new Intent(this, TriangleBothActivity.class));
+        });
+
+        //正方形
+        tvSquare.setOnClickListener(v -> {
+            startActivity(new Intent(this, SquareActivity.class));
         });
     }
 }
