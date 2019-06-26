@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.manna.opengl.render.cube.CubeActivity;
 import com.manna.opengl.render.oval.Oval;
 import com.manna.opengl.render.oval.OvalActivity;
 import com.manna.opengl.render.square.SquareActivity;
@@ -16,7 +17,7 @@ import com.manna.opengl.render.triangle.TriangleBothActivity;
  */
 public class MainActivity extends AppCompatActivity {
 
-    private TextView tvTriangle, tvTriangleBoth, tvSquare, tvOval;
+    private TextView tvTriangle, tvTriangleBoth, tvSquare, tvOval, tvCube;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         tvTriangleBoth = findViewById(R.id.tv_triangle_both);
         tvSquare = findViewById(R.id.tv_square);
         tvOval = findViewById(R.id.tv_oval);
+        tvCube = findViewById(R.id.tv_cube);
     }
 
     private void initOnClick() {
@@ -53,6 +55,11 @@ public class MainActivity extends AppCompatActivity {
         //圆形
         tvOval.setOnClickListener(v -> {
             startActivity(new Intent(this, OvalActivity.class));
+        });
+
+        //正方体
+        tvCube.setOnClickListener(v -> {
+            startActivity(new Intent(this, CubeActivity.class));
         });
     }
 }

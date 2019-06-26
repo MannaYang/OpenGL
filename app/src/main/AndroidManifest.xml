@@ -26,6 +26,7 @@
         <activity android:name=".render.triangle.TriangleBothActivity" />
         <activity android:name=".render.square.SquareActivity" />
         <activity android:name=".render.oval.OvalActivity" />
+        <activity android:name=".render.cube.CubeActivity" />
     </application>
 
 </manifest>

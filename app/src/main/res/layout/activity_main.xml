@@ -46,4 +46,14 @@
         android:background="#c1c1c1"
         android:layout_marginTop="1dp" />
 
+    <TextView
+        android:id="@+id/tv_cube"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="正方体"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="#c1c1c1"
+        android:layout_marginTop="1dp" />
+
 </LinearLayout>
