@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.manna.opengl.render.oval.Oval;
+import com.manna.opengl.render.oval.OvalActivity;
 import com.manna.opengl.render.square.SquareActivity;
 import com.manna.opengl.render.triangle.TriangleActivity;
 import com.manna.opengl.render.triangle.TriangleBothActivity;
@@ -14,7 +16,7 @@ import com.manna.opengl.render.triangle.TriangleBothActivity;
  */
 public class MainActivity extends AppCompatActivity {
 
-    private TextView tvTriangle, tvTriangleBoth, tvSquare;
+    private TextView tvTriangle, tvTriangleBoth, tvSquare, tvOval;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,26 +27,32 @@ public class MainActivity extends AppCompatActivity {
         initOnClick();
     }
 
-    private void init(){
-        tvTriangle=findViewById(R.id.tv_triangle);
-        tvTriangleBoth=findViewById(R.id.tv_triangle_both);
+    private void init() {
+        tvTriangle = findViewById(R.id.tv_triangle);
+        tvTriangleBoth = findViewById(R.id.tv_triangle_both);
         tvSquare = findViewById(R.id.tv_square);
+        tvOval = findViewById(R.id.tv_oval);
     }
 
-    private void initOnClick(){
+    private void initOnClick() {
         //三角形
-        tvTriangle.setOnClickListener(v->{
+        tvTriangle.setOnClickListener(v -> {
             startActivity(new Intent(this, TriangleActivity.class));
         });
 
         //等腰三角形
-        tvTriangleBoth.setOnClickListener(v->{
+        tvTriangleBoth.setOnClickListener(v -> {
             startActivity(new Intent(this, TriangleBothActivity.class));
         });
 
         //正方形
         tvSquare.setOnClickListener(v -> {
             startActivity(new Intent(this, SquareActivity.class));
+        });
+
+        //圆形
+        tvOval.setOnClickListener(v -> {
+            startActivity(new Intent(this, OvalActivity.class));
         });
     }
 }

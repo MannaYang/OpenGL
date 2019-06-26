@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/tv_triangle"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="45dp"
         android:text="直角三角形"
         android:gravity="center"
         android:textColor="#ffffff"
@@ -19,7 +19,7 @@
     <TextView
         android:id="@+id/tv_triangle_both"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="45dp"
         android:text="等腰直角三角形"
         android:gravity="center"
         android:textColor="#ffffff"
@@ -29,8 +29,18 @@
     <TextView
         android:id="@+id/tv_square"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="45dp"
         android:text="正方形"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="#c1c1c1"
+        android:layout_marginTop="1dp" />
+
+    <TextView
+        android:id="@+id/tv_oval"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="圆形"
         android:gravity="center"
         android:textColor="#ffffff"
         android:background="#c1c1c1"
