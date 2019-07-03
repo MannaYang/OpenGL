@@ -28,6 +28,7 @@
         <activity android:name=".render.oval.OvalActivity" />
         <activity android:name=".render.cube.CubeActivity" />
         <activity android:name=".render.cone.ConeActivity" />
+        <activity android:name=".graphics.GraphicsActivity" />
     </application>
 
 </manifest>

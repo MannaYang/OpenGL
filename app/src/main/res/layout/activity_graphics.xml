@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:contentDescription="@null"-->
+    <!--android:src="@mipmap/ic_pie" />-->
+    <android.opengl.GLSurfaceView
+        android:id="@+id/gl_img_show"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/tv_old"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="原图"
+            android:textColor="#ffffff"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tv_black_white"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="黑白"
+            android:layout_marginStart="10dp"
+            android:textColor="#ffffff"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tv_blue"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="冷色调"
+            android:layout_marginStart="10dp"
+            android:textColor="#ffffff"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tv_red"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="暖色调"
+            android:layout_marginStart="10dp"
+            android:textColor="#ffffff"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tv_blur"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="模糊"
+            android:textColor="#ffffff"
+            android:layout_marginStart="10dp"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tv_scale"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="放大"
+            android:textColor="#ffffff"
+            android:layout_marginStart="10dp"
+            android:background="@color/colorAccent" />
+    </LinearLayout>
+</LinearLayout>

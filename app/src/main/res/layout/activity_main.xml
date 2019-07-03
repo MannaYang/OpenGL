@@ -4,66 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tv_triangle"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:text="直角三角形"
+        android:background="#c1c1c1"
         android:gravity="center"
-        android:textColor="#ffffff"
-        android:background="#c1c1c1"/>
+        android:text="直角三角形"
+        android:textColor="#ffffff" />
 
     <TextView
         android:id="@+id/tv_triangle_both"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:text="等腰直角三角形"
-        android:gravity="center"
-        android:textColor="#ffffff"
+        android:layout_marginTop="1dp"
         android:background="#c1c1c1"
-        android:layout_marginTop="1dp"/>
+        android:gravity="center"
+        android:text="等腰直角三角形"
+        android:textColor="#ffffff" />
 
     <TextView
         android:id="@+id/tv_square"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:text="正方形"
-        android:gravity="center"
-        android:textColor="#ffffff"
+        android:layout_marginTop="1dp"
         android:background="#c1c1c1"
-        android:layout_marginTop="1dp" />
+        android:gravity="center"
+        android:text="正方形"
+        android:textColor="#ffffff" />
 
     <TextView
         android:id="@+id/tv_oval"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:text="圆形"
-        android:gravity="center"
-        android:textColor="#ffffff"
+        android:layout_marginTop="1dp"
         android:background="#c1c1c1"
-        android:layout_marginTop="1dp" />
+        android:gravity="center"
+        android:text="圆形"
+        android:textColor="#ffffff" />
 
     <TextView
         android:id="@+id/tv_cube"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:text="正方体"
-        android:gravity="center"
-        android:textColor="#ffffff"
+        android:layout_marginTop="1dp"
         android:background="#c1c1c1"
-        android:layout_marginTop="1dp" />
+        android:gravity="center"
+        android:text="正方体"
+        android:textColor="#ffffff" />
 
     <TextView
         android:id="@+id/tv_cone"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:text="圆锥"
-        android:gravity="center"
-        android:textColor="#ffffff"
+        android:layout_marginTop="1dp"
         android:background="#c1c1c1"
-        android:layout_marginTop="1dp" />
+        android:gravity="center"
+        android:text="圆锥"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tv_texture"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="1dp"
+        android:background="#c1c1c1"
+        android:gravity="center"
+        android:text="纹理图片"
+        android:textColor="#ffffff" />
 
 </LinearLayout>
